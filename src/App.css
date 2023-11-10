@@ -3,13 +3,24 @@
 }
 
 .App-logo {
+  margin-top: 450px;
   height: 40vmin;
   pointer-events: none;
 }
 
+@keyframes App-logo-motion {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-motion infinite 2s linear;
   }
 }
 
